@@ -63,7 +63,7 @@ El proyecto corre en el puerto **8086**, sin afectar las actividades 1 y 2 (puer
 <img width="765" height="107" alt="image" src="https://github.com/user-attachments/assets/e4585120-efab-4d3b-a612-b72476344fef" />
 
 ## 7. Pruebas con Postman
-Probé la API REST del proyecto desplegado en el VPS (`http://138.68.234.30:8086`). La colección exportada está en la carpeta `postman/`.
+Probé la API REST del proyecto desplegado en el VPS (`http://138.68.234.30:8086`). La colección esta en este repositorio.
 
 | Operación | Método | URL |
 |---|---|---|
