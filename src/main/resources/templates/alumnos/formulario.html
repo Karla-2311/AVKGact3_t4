@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Alumno</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-4" style="max-width: 500px;">
+  <h2>Alumno</h2>
+
+  <form th:action="@{/alumnos/guardar}" th:object="${alumno}" method="post">
+    <input type="hidden" th:field="*{id}">
+
+    <label>Nombre</label>
+    <input type="text" class="form-control mb-3" th:field="*{nombre}">
+
+    <label>Matrícula</label>
+    <input type="text" class="form-control mb-3" th:field="*{matricula}">
+
+    <label>Escuela</label>
+    <select name="escuelaId" class="form-select mb-3">
+      <option th:each="e : ${escuelas}" th:value="${e.id}" th:text="${e.nombre}"
+              th:selected="${alumno.escuela != null and alumno.escuela.id == e.id}"></option>
+    </select>
+
+    <button type="submit" class="btn btn-success">Guardar</button>
+    <a th:href="@{/alumnos}" class="btn btn-secondary">Cancelar</a>
+  </form>
+</div>
+</body>
+</html>
