@@ -1,0 +1,182 @@
+{
+  "info": {
+    "_postman_id": "2966724e-8dd4-43e7-b11d-159e5704f08a",
+    "name": "Act3_t4_Karla",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58882096",
+    "_collection_link": "https://go.postman.co/collection/58882096-2966724e-8dd4-43e7-b11d-159e5704f08a?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "http://138.68.234.30:8086/api/alumnos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://138.68.234.30:8086/api/alumnos",
+          "protocol": "http",
+          "host": [
+            "138",
+            "68",
+            "234",
+            "30"
+          ],
+          "port": "8086",
+          "path": [
+            "api",
+            "alumnos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://138.68.234.30:8086/api/alumnos",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Luis Hernández\",\r\n  \"matricula\": \"2021121\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://138.68.234.30:8086/api/alumnos?escuelaId=1",
+          "protocol": "http",
+          "host": [
+            "138",
+            "68",
+            "234",
+            "30"
+          ],
+          "port": "8086",
+          "path": [
+            "api",
+            "alumnos"
+          ],
+          "query": [
+            {
+              "key": "escuelaId",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://138.68.234.30:8086/api/alumnos/5",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Luis Hernández Pérez\",\r\n  \"matricula\": \"20211111\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://138.68.234.30:8086/api/alumnos/5?escuelaId=1",
+          "protocol": "http",
+          "host": [
+            "138",
+            "68",
+            "234",
+            "30"
+          ],
+          "port": "8086",
+          "path": [
+            "api",
+            "alumnos",
+            "5"
+          ],
+          "query": [
+            {
+              "key": "escuelaId",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://138.68.234.30:8086/api/alumnos/5",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://138.68.234.30:8086/api/alumnos/5",
+          "protocol": "http",
+          "host": [
+            "138",
+            "68",
+            "234",
+            "30"
+          ],
+          "port": "8086",
+          "path": [
+            "api",
+            "alumnos",
+            "5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://138.68.234.30:8086/api/escuelas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://138.68.234.30:8086/api/escuelas",
+          "protocol": "http",
+          "host": [
+            "138",
+            "68",
+            "234",
+            "30"
+          ],
+          "port": "8086",
+          "path": [
+            "api",
+            "escuelas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://138.68.234.30:8086/api/alumnos/1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://138.68.234.30:8086/api/alumnos/1",
+          "protocol": "http",
+          "host": [
+            "138",
+            "68",
+            "234",
+            "30"
+          ],
+          "port": "8086",
+          "path": [
+            "api",
+            "alumnos",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
