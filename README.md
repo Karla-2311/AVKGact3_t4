@@ -1,4 +1,4 @@
-# Actividad 3 - Tema 4: CRUD con Spring Boot, JPA y MySQL
+# Actividad 3 - CRUD con Spring Boot, JPA y MySQL
 REALIZADO POR: ANTONIO VAZQUEZ KARLA GUADALUPE
 
 CRUD completo de **Alumnos** y **Escuelas** hecho con Spring Boot, Spring Data JPA y MySQL, con vistas Thymeleaf y una API REST. El proyecto corre en un VPS, conectado a una base de datos MySQL real.
